@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body style="background-image: linear-gradient(to right,#AB92D4, #EAB8E6);">
+    <div style="display: flex; justify-content: center; align-items: center; height: 90vh;">
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; background-color: white; padding: 20px; gap: 20px; width: 420px; border: none; border-radius: 12px; box-shadow: 5px 5px 5px 5px #CEA5D2;">
+            <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">🔮Wisdom Generator</h1>
+            <span id="display">
+            </span>
+            <button onclick="getadvice()"
+                style="border: none; border-radius: 30px; height: 35px; width: 125px; background-color: #5B4CC4; color: white; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Give
+                Me Advice!</button>
+        </div>
+    </div>
+</body>
+<script>
+    const display = document.getElementById("display");
+    async function getadvice() {
+        try {
+            const request = await fetch("https://api.adviceslip.com/advice");
+            const response = await request.json("");
+            display.innerHTML = `
+            <p
+                    style="color: #6E5EE7; font-style: italic; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;margin-bottom: 50px;">
+                    "${response.slip.advice}"
+                </p>
+        `
+        } catch (error) {
+            console.log("this is the error", error)
+        }
+    }
+</script>
+
+</html>

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body
+    style="background-color: #000000; margin-left: 50px; margin-right: 50px; font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: white;">
+    <div style="display: flex; justify-content: space-between; margin-bottom: 100px;">
+        <img style="background-color: black; width: 100px;"
+            src="data:image/png;base64,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"
+            alt="">
+        <div
+            style="width: 500px; height: 65px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; display: flex; justify-content: space-evenly; ">
+            <h2>
+                Home
+            </h2>
+            <h2>
+                Service
+            </h2>
+            <div>
+                <h2>
+                    About
+                </h2>
+                <hr>
+            </div>
+            <h2>
+                Skills
+            </h2>
+            <h2>
+                Projects
+            </h2>
+        </div>
+        <button
+            style="height: 35px; width: 100px; border: 2px solid #252227; background-color: #575757; color: white; border-radius: 12px;">Let's
+            talk</button>
+    </div>
+    <div style="display: flex; justify-content: space-between; margin-bottom: 100px;">
+        <div>
+            <h2>I'am Nayan Pun</h2>
+            <h1>Front-End Kid-Developer <br> & Back-End</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.<br>
+                Modi magni cumque quia, laboriosam corporis optio<br>
+                sed nam obcaecati tempora commodi cum!<br></p>
+            <button
+                style="height: 35px; width: 100px; border: 2px solid #252227; background-color: #575757; color: white; border-radius: 12px;">Download
+                CV</button>
+            <div style="display: flex;">
+                <wa-icon name="square-linkedin" family="brands"></wa-icon>
+                <wa-icon name="github" family="brands"></wa-icon>
+            </div>
+        </div>
+        <img style="width: 500px;"
+            src="https://png.pngtree.com/thumb_back/fw800/background/20250902/pngtree-a-white-silhouette-of-software-developer-wearing-headphones-coding-on-computer-image_18721636.webp"
+            alt="">
+    </div>
+    <div style="margin-bottom: 100px;">
+        <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+            <h1>Services</h1>
+            <p>We help you make your first ever website.</p>
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; gap: 10px; padding: 10px;">
+                    <h2>Ui Website <br> design</h2>
+                    <p>Clean, user-focused layouts<br>
+                        with clear structure, smooth<br>
+                        navigation, and strong visual<br>
+                        hierarchy
+                    </p>
+                    <hr>
+
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; margin-bottom: 10px; margin-top: 10px;">
+                        Modern Layouts</button>
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white;">
+                        Responsive Design</button>
+                </div>
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; gap: 10px; padding: 10px;">
+                    <h2>Front-End <br> Development</h2>
+                    <p>Responsive interfaces using<br>
+                        HTML, CSS, and JavaScript for<br>
+                        clean,consistent,relitable<br>
+                        performence
+                    </p>
+                    <hr>
+
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; margin-bottom: 10px; margin-top: 10px;">
+                        Clean HTML/CSS
+                    </button>
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white;">
+                        Smooth Interaction
+                    </button>
+                </div>
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; gap: 10px; padding: 10px;">
+                    <h2>Performance &<br> Responsiveness</h2>
+                    <p>Fast, mobile-first websites<br>
+                        optimized for spend,<br>
+                        accessbillity, and dependable<br>
+                        Performance
+                    </p>
+                    <hr>
+
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; margin-bottom: 10px; margin-top: 10px;">
+                        Speed Optimation
+                    </button>
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white;">
+                        Assest efficiency
+                    </button>
+                </div>
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; gap: 10px; padding: 10px;">
+                    <h2>World Press <br> Implemention</h2>
+                    <p>Lightweight WordPress setups<br>
+                        with easy updates, fast loading,<br>
+                        and scalable, clean,<br>
+                        customizable layouts.
+                    </p>
+                    <hr>
+
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; margin-bottom: 10px; margin-top: 10px;">
+                        Theme Setups
+                    </button>
+                    <button
+                        style="width: 280px; height: 45px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white;">
+                        Easy Management
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div style="display: flex; justify-content: center; align-items: center; flex-direction: column;">
+        <h1>About Me</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis labore illo assumenda iusto sunt minus sit
+            quod a totam odit quis reprehenderit molestiae.</p>
+        <div
+            style="display: flex; justify-content: center; align-items: center; flex-direction: column; margin-bottom: 100px;">
+            <h2>My Approach</h2>
+            <div style="display: flex; gap: 10px; width: 100%; justify-content: center; margin-bottom: 48px;">
+                <div
+                    style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px; display: flex; align-items: center; gap: 10px; width: 300px; height: 65px;">
+                    <span
+                        style="background-color: #252227; color: white; padding: 5px 10px; border-radius: 12px;">01</span>
+                    <p>Understand users & goals</p>
+                </div>
+                <div
+                    style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px; display: flex; align-items: center; gap: 10px; width: 300px; height: 65px;">
+                    <span
+                        style="background-color: #252227; color: white; padding: 5px 10px; border-radius: 12px;">02</span>
+                    <p>Create clean UI layouts</p>
+                </div>
+                <div
+                    style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px; display: flex; align-items: center; gap: 10px; width: 300px; height: 65px;">
+                    <span
+                        style="background-color: #252227; color: white; padding: 5px 10px; border-radius: 12px;">03</span>
+                    <p>Responsive experiences</p>
+                </div>
+            </div>
+
+            <div style="display: flex; justify-content: center; gap: 10px; margin-bottom: 100px;">
+                <div style="width: 150px; text-align: center;">
+                    <h2>Almost 1Y</h2>
+                    <p>Years Of Experience</p>
+                </div>
+                <div style="width: 150px; text-align: center;">
+                    <h2>30+</h2>
+                    <p>Projects Completed</p>
+                </div>
+                <div style="width: 150px; text-align: center;">
+                    <h2>0</h2>
+                    <p>Clients Served</p>
+                </div>
+            </div>
+
+            <h1>Skills</h1>
+            <p>Crafting seamless UI/UX and clean code</p>
+
+            <div style="display: flex; justify-content: center; gap: 10px;">
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px;">
+                    <h2>Core Skills</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">UI/UX
+                            Layout</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Frontend
+                            Dev</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Responsive
+                            Web Design</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Component-Based
+                            Design</button>
+                    </div>
+                </div>
+
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px;">
+                    <h2>Frontend Tech</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">HTML</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">CSS</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">JS</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">WordPress</button>
+                    </div>
+                </div>
+
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px;">
+                    <h2>Design Tools</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Figma</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Photoshop</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Illustrator</button>
+                    </div>
+                </div>
+
+                <div
+                    style="width: 300px; height: 350px; background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; padding: 10px;">
+                    <h2>Tools & Interaction</h2>
+                    <div style="display: flex; flex-wrap: wrap; gap: 10px;">
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">GitHub</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">Netlify</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">GSAP</button>
+                        <button
+                            style="background-color: #1B1B1B; border: 1px solid #373737; border-radius: 12px; color: white; padding: 5px 10px;">UI
+                            Interactions</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+</body>
+
+</html>
